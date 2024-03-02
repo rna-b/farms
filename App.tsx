@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import MainNavigation from './routes/nav';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome</Text>
+      {/* <Text style={styles.title}>Welcome</Text>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Username</Text>
         <TextInput style={styles.textbox} placeholder="Enter your username" />
@@ -13,7 +14,9 @@ const App = () => {
         <TouchableOpacity style={styles.loginButton}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
-      </View>
+      </View> */}
+
+      <MainNavigation/>
     </View>
   );
 };
@@ -21,8 +24,8 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: '#f8f8f8',
   },
   inputContainer: {
